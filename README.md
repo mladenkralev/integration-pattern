@@ -1,4 +1,5 @@
 # Pipes and Filter integration pattern
+![Alt text here](images/PipesAndFilters.svg)
 Summary
 - Pluses 
   - Allows isolated components to process messages in parallel way
@@ -9,8 +10,8 @@ Summary
   - Increasing costs
   - Increasing complexity - multiple pipes, multiples components
 
-![Alt text here](images/PipesAndFilters.svg)
 # Message router
+![Alt text here](images/MessageRouter.drawio.svg)
 Summary
 - Pluses
     - Single point component responsible for decision making 
@@ -21,16 +22,15 @@ Summary
     - Increasing costs
     - Increasing complexity - multiple pipes, multiples components
 
-![Alt text here](images/MessageRouter.drawio.svg)
-# Message translator
 
+# Message translator
+![Alt text here](images/MessageTranslator.drawio.svg)
 Summary
 - Pluses
   - Decouples components
   - Increases **_interoperability_** (ability of different systems, devices, applications, or products to communicate and work together effectively, even if they were developed by different manufacturers)
   - Similar to adapter pattern in GOF
 
-![Alt text here](images/MessageTranslator.drawio.svg)
 
 # Message endpoint
 ![Alt text here](images/MessagEndpoint.drawio.svg)
@@ -51,7 +51,6 @@ Summary
 
 # Point to point channel
 ![Alt text here](images/PointToPoint.drawio.svg)
-
 Summary
 - Pluses
   - Mimics RPC calls, but it does not wait for response. Can be combined with document, command or other message types
@@ -80,3 +79,68 @@ Summary
   - **Message broker concenrn** If broker cannot proceed with consuming the message it must indicate in a way there is a error
 - Negatives
   - None
+
+# Guaranteed delivery
+![Alt text here](images/GuaranteedDelivery.drawio.svg)
+Summary
+- Pluses
+  - Ensures that the message is delivered
+  - Ensures that the message is delivered only once
+  - Ensures that the message is delivered in order
+- Negatives
+  - None
+  - **_Note:_** This is a broker concern
+
+# Channel adapter
+![Alt text here](images/ChannelAdapter.drawio.svg)
+Summary
+- Pluses
+  - Decouples the system from the external system
+  - Increases **_interoperability_** (ability of different systems, devices, applications, or products to communicate and work together effectively, even if they were developed by different manufacturers)
+  - Similar to adapter pattern in GOF
+- Negatives
+  - None 
+
+# Message bridge
+![MessageBrdige.drawio.svg](images/MessageBrdige.drawio.svg)
+Summary
+- Pluses
+
+
+# Document Message
+![DocumentMessage.drawio.svg](images/DocumentMessage.drawio.svg)
+- Pluses
+    - Allows to send a document as a message
+- Negatives
+    - None
+
+# Command Message
+![CommandMessage.drawio.svg](images/CommandMessage.drawio.svg)
+- Pluses
+    - Allows to send a command as a message
+- Negatives
+  - None
+
+
+# Event Message
+![EventMessage.drawio.svg](images/EventMessage.drawio.svg)
+- Pluses
+    - Allows to send a event as a message
+  - Negatives
+    - None
+
+# Request-Reply
+![RequestReply.drawio.svg](images/ReturnAdress.drawio.svg)  
+- Pluses
+    - Allows to send a request and get a reply
+  - Negatives
+    - None
+
+# Return Address
+![ReturnAdress.drawio.svg](images/ReturnAdress.drawio.svg)
+- Pluses
+    - Allows to send a request and get a response
+  - Negatives
+    - None
+
+
