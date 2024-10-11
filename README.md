@@ -81,7 +81,8 @@ Summary
   - None
 
 # Guaranteed delivery
-![Alt text here](images/GuaranteedDelivery.drawio.svg)
+![GuaranteeDelivery.drawio.svg](images/GuaranteeDelivery.drawio.svg)
+
 Summary
 - Pluses
   - Ensures that the message is delivered
@@ -142,5 +143,94 @@ Summary
     - Allows to send a request and get a response
   - Negatives
     - None
+
+# Message sequence
+![MessageSequence.drawio.svg](images/MessageSequence.drawio.svg)
+- Pluses
+  - TODO
+
+# Message Expiration
+![MessageExpiration.drawio.svg](images/MessageExpiration.drawio.svg)
+- Pluses
+  - TODO
+
+# Content Based Router
+![ContentBasedRouter.drawio.svg](images/ContentBasedRouter.drawio.svg)
+- Pluses
+  - TODO
+
+# Message Filter TODO
+![ContentBasedRouter.drawio.svg](images/Message)
+- Pluses
+  - TODO
+
+# Publish subscribe 
+![PublishSubscribe.drawio.svg](images/PublishSubscribe.drawio.svg)
+- Pluses
+  - TODO
+
+
+# Content Based vs Filter based
+![ContentBasedVsFilter.drawio.svg](images/ContentBasedVsFilter.drawio.svg)
+- Pluses
+  - TODO
+
+
+# Publish subscribe vs Recipient List
+![PublishSubscribeVsRecipientList.drawio.svg](images/PublishSubscribeVsRecipientList.drawio.svg)
+- Pluses
+  - TODO
+
+# DynamicRouter
+![DynamicRouter.drawio.svg](images/DynamicRouter.drawio.svg)
+- Pluses
+  - TODO
+
+# Splitter
+![Splitter.drawio.svg](images/Splitter.drawio.svg)
+- Pluses
+  - TODO
+
+# Aggregator
+![Aggregator.drawio.svg](images/Aggregator.drawio.svg)
+- Pluses
+  - TODO
+
+
+# Aggregator and Splitter
+![AggregatorAndSplitter.drawio.svg](images/AggregatorAndSplitter.drawio.svg)
+- Pluses
+  - TODO
+
+
+# Resequencer
+![Resequencer.drawio.svg](images/Resequencer.drawio.svg)
+- Pluses
+  - TODO
+
+
+# Composed Message Processor
+![ComposedMessageProcessor.drawio.svg](images/ComposedMessageProcessor.drawio.svg)
+- Pluses
+  - TODO
+
+# Scatter-Gather
+![Scatter-Gather.drawio.svg](images/Scatter-Gather.drawio.svg)
+- Pluses
+  - TODO
+
+
+# Corelation id
+![CorelationId.drawio.svg](images/CorelationId.drawio.svg)
+- Pluses
+  - TODO
+
+# Corelation id
+![RecipientList.drawio.svg](images/RecipientList.drawio.svg)
+- Pluses
+  - TODO
+
+
+
 
 
