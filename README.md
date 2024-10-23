@@ -43,6 +43,8 @@
 - **Benefits**: Decouples publishers from subscribers, supporting broadcast communication.
 - **Considerations**: Effective for scenarios with multiple recipients, with no notable drawbacks.
 
+![Alt text here](images/DatatypeChannel.drawio.svg)
+
 ## Summary
 - **Purpose**: A channel that ensures messages conform to a specific data type or schema.
 - **Benefits**: Ensures message data integrity across systems.
@@ -52,7 +54,7 @@
 ![Alt text here](images/InvalidMessage.drawio.svg)
 
 ## Summary
-- **Purpose**: Handles messages that do not meet processing criteria and ensures they are processed in a graceful manner.
+- **Purpose**: Receiver validation. Handles messages that do not meet processing criteria and ensures they are processed in a graceful manner.
 - **Benefits**: Separates valid and invalid messages, allowing for error handling and preventing system crashes.
 - **Considerations**: Requires proper validation logic to ensure invalid messages are captured and processed correctly.
 
@@ -61,7 +63,7 @@
 ![Alt text here](images/DeadLetter.drawio.svg)
 
 ## Summary
-- **Purpose**: Handles messages that cannot be processed by the system.
+- **Purpose**: Broker validation.Handles messages that cannot be processed by the system.
 - **Benefits**: Separates failed messages for later inspection or processing.
 - **Considerations**: Used when the message broker cannot consume the message, ensuring graceful error management.
 
@@ -69,9 +71,17 @@
 ![GuaranteeDelivery.drawio.svg](images/GuaranteeDelivery.drawio.svg)
 
 ## Summary
-- **Purpose**: Ensures that messages are delivered exactly once and in order.
-- **Benefits**: Provides reliability in message delivery, especially in distributed systems.
+- **Purpose**: Ensures that durability/reliability of the broker messages.
+- **Benefits**: Provides durability/reliability in message delivery, especially in distributed systems.
 - **Considerations**: Ensures consistency but adds complexity, typically managed by the broker.
+
+## Channel adapter
+![ChannelAdapter.drawio.svg](images/ChannelAdapter.drawio.svg)
+
+**Summary**:
+- **Purpose**: A Channel Adapter allows for communication between an external system (e.g., a database, file system, or external service) and a messaging system. It translates between the two different communication mechanisms—messaging and the external system's API or protocol.
+- **Benefits**: Provides integration with external systems that do not natively support messaging, allowing seamless communication with a message-based infrastructure.
+- **Considerations**: The adapter must handle the protocol conversion and can add complexity if the external system's API is not easily compatible with messaging. It also needs to ensure reliability and fault tolerance when interacting with external systems.
 
 ## Message Bridge
 ![MessageBrdige.drawio.svg](images/MessageBrdige.drawio.svg)
