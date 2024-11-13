@@ -43,6 +43,7 @@
 - **Benefits**: Decouples publishers from subscribers, supporting broadcast communication.
 - **Considerations**: Effective for scenarios with multiple recipients, with no notable drawbacks.
 
+## Data Type Channel
 ![Alt text here](images/DatatypeChannel.drawio.svg)
 
 ## Summary
@@ -176,7 +177,7 @@
 - **Considerations**: Increases complexity in routing logic but provides high flexibility.
 
 ## Message Filter
-![ContentBasedRouter.drawio.svg](images/Message)
+![MessageFilter.drawio.svg](images/MessageFilter.drawio.svg)
 
 ## Summary
 - **Purpose**: Filters out unnecessary or unwanted messages.
