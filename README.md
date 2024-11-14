@@ -141,6 +141,14 @@
 - **Purpose**: Embeds the sender’s address in the message to receive a reply.
 - **Benefits**: Ensures that replies are correctly routed back to the original requester.
 - **Considerations**: Often used in conjunction with request-reply systems.
+- 
+## Message correlation
+![Message Correlation](images/MessageCorrelation.drawio.svg)
+
+## Summary
+- **Purpose**: In Async communication, how does the receiver knows for which request is the message.
+- **Benefits**: Solves the request response relation problem.
+- **Considerations**: Adds
 
 ## Message Sequence
 ![MessageSequence.drawio.svg](images/MessageSequence.drawio.svg)
@@ -158,14 +166,6 @@
 - **Benefits**: Prevents stale or outdated messages from clogging the system.
 - **Considerations**: Ensures timely message processing in time-sensitive systems.
 
-## Format Indicator
-(No image provided)
-
-## Summary
-- **Purpose**: Indicates the format or encoding of a message for proper interpretation.
-- **Benefits**: Ensures the correct parsing and processing of message content.
-- **Considerations**: Requires accurate identification of format across systems.
-
 # Message Routing
 
 ## Content-Based Router
@@ -173,6 +173,14 @@
 
 ## Summary
 - **Purpose**: Routes messages to different channels based on their content.
+- **Benefits**: Enables dynamic message routing based on message data.
+- **Considerations**: Increases complexity in routing logic but provides high flexibility.
+
+## Dynamic-Based Router
+![ContentBasedRouter.drawio.svg](images/DynamicRouter.drawio.svg)
+
+## Summary
+- **Purpose**: Routes messages to different channels based flexible criteria. Dynamic router uses control channel and persistent layer to hold the criteria.
 - **Benefits**: Enables dynamic message routing based on message data.
 - **Considerations**: Increases complexity in routing logic but provides high flexibility.
 
@@ -233,9 +241,19 @@
 - **Considerations**: Can introduce latency in gathering results.
 
 ## Routing Slip
-(No image provided)
+![RoutingSlip.drawio.svg](images/RoutingSlip.drawio.svg)
 
 ## Summary
-- **Purpose**: Allows a message to carry a predefined set of routing instructions for processing.
+- **Purpose**: Allows a message to carry a predefined set of routing instructions for processing. Used when you don't know the steps at design time
 - **Benefits**: Enables flexible routing through various processing steps.
 - **Considerations**: Requires careful planning of routing logic to avoid bottlenecks.
+
+## Process manager
+![Project%20Manager.drawio.svg](images/Project%20Manager.drawio.svg)
+
+## Summary
+- **Purpose**: Allows a trigger message to execute multiple processing steps which are not known at design time and may not be sequential. It can reroute the message  based on intermediate results
+- **Benefits**: Enables flexible routing through various not sequential processing steps
+- **Considerations**: Complexity in Routing Logic, possible bottlenecks, latency, error handling challenge
+
+## 
